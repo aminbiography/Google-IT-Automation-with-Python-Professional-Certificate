@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Cybersecurity Professional Certificate</title>
+  <style>
+    /* Basic layout and styling for full-page*/
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    /* Main container to apply 3D perspective */
+    .container {
+      text-align: center;
+      perspective: 1000px; 
+    }
+
+    /* Each text group with animation */
+    .text-wrapper {
+      display: inline-block;
+      font-size: 60px;
+      font-weight: bold;
+      text-transform: uppercase;
+      position: relative;
+      animation: floatText 3s ease-in-out infinite;
+      margin-right: 40px; 
+    }
+
+    .text-wrapper span {
+      display: inline-block;
+      opacity: 0;
+      transform: rotateX(-90deg);
+      animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    /* Color scheme based on Google colors */
+    .google-blue {
+      color: #4285f4; 
+    }
+
+    .google-red {
+      color: #ea4335; 
+    }
+
+    .google-yellow {
+      color: #fbbc05; 
+    }
+
+    .google-green {
+      color: #34a853; 
+    }
+
+    /* 3D floating animation */
+    @keyframes floatText {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-30px) rotateY(15deg);
+      }
+      100% {
+        transform: translateY(0) rotateY(0deg);
+      }
+    }
+
+    /* Fade-in with 3D rotation */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+      }
+      100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+      }
+    }
+
+    /* Hover effect to scale and rotate the text */
+    .text-wrapper:hover {
+      transform: scale(1.2) rotateY(10deg);
+      transition: transform 0.4s ease;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Google Text -->
+    <div class="text-wrapper">
+      <span class="google-blue">G</span>
+      <span class="google-red">o</span>
+      <span class="google-yellow">o</span>
+      <span class="google-blue">g</span>
+      <span class="google-green">l</span>
+      <span class="google-red">e</span>
+    </div>
+
+    <!-- Cybersecurity Text -->
+    <div class="text-wrapper">
+      <span class="google-blue">C</span>
+      <span class="google-green">y</span>
+      <span class="google-yellow">b</span>
+      <span class="google-red">e</span>
+      <span class="google-blue">r</span>
+      <span class="google-green">s</span>
+      <span class="google-yellow">e</span>
+      <span class="google-red">c</span>
+      <span class="google-blue">u</span>
+      <span class="google-green">r</span>
+      <span class="google-yellow">i</span>
+      <span class="google-red">t</span>
+      <span class="google-blue">y</span>
+    </div>
+
+    <!-- Professional Certificate Text -->
+    <div class="text-wrapper">
+      <span class="google-blue">P</span>
+      <span class="google-green">r</span>
+      <span class="google-yellow">o</span>
+      <span class="google-red">f</span>
+      <span class="google-blue">e</span>
+      <span class="google-green">s</span>
+      <span class="google-yellow">s</span>
+      <span class="google-red">i</span>
+      <span class="google-blue">o</span>
+      <span class="google-green">n</span>
+      <span class="google-yellow">a</span>
+      <span class="google-red">l</span>
+    </div>
+
+    <div class="text-wrapper">
+      <span class="google-blue">C</span>
+      <span class="google-green">e</span>
+      <span class="google-yellow">r</span>
+      <span class="google-red">t</span>
+      <span class="google-blue">i</span>
+      <span class="google-green">f</span>
+      <span class="google-yellow">i</span>
+      <span class="google-red">c</span>
+      <span class="google-blue">a</span>
+      <span class="google-green">t</span>
+      <span class="google-yellow">e</span>
+    </div>
+  </div>
+
+  <script>
+    // Optionally add JavaScript for interaction or effects
+    document.querySelectorAll('.text-wrapper').forEach((el) => {
+      el.addEventListener('mouseover', () => {
+        el.style.transform = "scale(1.1) rotateY(15deg)";
+        el.style.transition = "transform 0.3s ease";
+      });
+
+      el.addEventListener('mouseout', () => {
+        el.style.transform = "scale(1) rotateY(0deg)";
+      });
+    });
+  </script>
+
+</body>
+</html>
