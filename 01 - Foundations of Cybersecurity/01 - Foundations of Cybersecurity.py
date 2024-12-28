@@ -1,1 +1,0 @@
-# 01 - Foundations of Cybersecurity
