@@ -8,7 +8,7 @@ MIT License
 
 Copyright (c) 2025 Mohammad Aminul Islam
 
-This file is part of the *Google Cloud Cybersecurity Professional Certificate* program on Coursera.  
+This file is part of the *Google IT Automation with Python Professional Certificate* program on Coursera.  
 (Personal Short Notes and Certifications Repository)
 Licensed under the MIT License. See the LICENSE file for details.
 
