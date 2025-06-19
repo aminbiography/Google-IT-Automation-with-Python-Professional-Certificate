@@ -7,6 +7,7 @@
 - **Learning Multiple Languages**: Mastering one programming language helps in understanding others due to shared principles like variables, loops, and logic.
 - **Automation**: Using scripts to replace manual tasks – reduces time, increases accuracy.
 - **Syntax in Python**: Crucial to write precise code – Python is case-sensitive and sensitive to indentation and punctuation.
+- **Semantics in Python**: The meaning or effect of code when it runs – what it actually does when executed, as opposed to syntax.
 - **Functions and Keywords**: `print()` is a common function; keywords include `if`, `else`, `for`, `while`, `def`, `return`.
 
 ## Glossary Terms
