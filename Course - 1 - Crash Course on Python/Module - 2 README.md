@@ -21,8 +21,8 @@
 ## Type Conversion
 
 - **Implicit Conversion**:  
-  Python automatically converts types.   
-  _Example_: `7 + 2.0 U+27A5 9.0`
+  Python automatically converts types.  &rightarrow 
+  _Example_: `7 + 2.0  9.0`
 
 - **Explicit Conversion**:  
   Use functions to convert types manually:
