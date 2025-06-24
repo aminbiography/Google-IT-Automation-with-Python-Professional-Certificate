@@ -81,8 +81,7 @@ Fix: Validate the denominator before dividing.
 name = "Python"
 print("Welcome to", name)
 
-Output:
-Welcome to Python
+Output: Welcome to Python
 ```
 ### `type()`
 **Purpose:** Returns the data type of a given object.
@@ -92,8 +91,7 @@ Welcome to Python
 value = 42
 print(type(value))
 
-Output:
-<class 'int'>
+Output: <class 'int'>
 ```
 
 ### `str()`
@@ -103,8 +101,7 @@ Output:
 age = 30
 print("I am " + str(age) + " years old.")
 
-Output:
-I am 30 years old.
+Output: I am 30 years old.
 ```
 
 ### `sorted()`
@@ -114,8 +111,7 @@ I am 30 years old.
 numbers = [5, 2, 9, 1]
 print(sorted(numbers))
 
-Output:
-[1, 2, 5, 9]
+Output: [1, 2, 5, 9]
 ```
 
 ### `max()`
@@ -125,8 +121,7 @@ Output:
 scores = [85, 92, 78]
 print(max(scores))
 
-Output:
-92
+Output: 92
 ```
 
 ### `min()`
@@ -136,8 +131,7 @@ Output:
 temperatures = [13, 18, 9, 21]
 print(min(temperatures))
 
-Output:
-9
+Output: 9
 ```
 
 ---
