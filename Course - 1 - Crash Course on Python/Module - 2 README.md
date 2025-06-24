@@ -21,7 +21,7 @@
 ## Type Conversion
 
 - **Implicit Conversion**:  
-  Python automatically converts types.  &rightarrow 
+  Python automatically converts types.                                 &rightarrow 
   _Example_: `7 + 2.0  9.0`
 
 - **Explicit Conversion**:  
