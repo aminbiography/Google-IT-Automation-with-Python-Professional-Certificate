@@ -22,7 +22,7 @@
 
 - **Implicit Conversion**:  
   Python automatically converts types.                                 
-  _Example_: `7 + 2.0  9.0`
+  _Example_: `7 + 2.0 &rightarrow 9.0`
 
 - **Explicit Conversion**:  
   Use functions to convert types manually:
@@ -32,7 +32,7 @@
   float(5)  # 5.0
   ```
 
-  ## Type Annotation
+## Type Annotation  
 ```
 name: str = "Alice"
 age: int = 25
@@ -76,7 +76,7 @@ Fix: Validate the denominator before dividing.
 
 ### `print()`
 
-**Purpose:** Displays one or more values to the console.
+**Purpose:** Displays one or more values to the console.         
 
 **Example:**
 ```python
