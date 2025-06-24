@@ -1,4 +1,4 @@
-# Python Key Concepts for Automation 02           &rightarrow 
+# Python Key Concepts for Automation 02          
 
 ---
 
