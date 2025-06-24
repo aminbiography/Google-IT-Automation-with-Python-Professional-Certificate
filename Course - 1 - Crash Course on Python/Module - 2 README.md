@@ -49,7 +49,6 @@ score_list: list[int] = [90, 85, 78]
 | `**`     | Exponentiation     | 2 ** 3  | `8`    |
 | `**`     | Exponentiation     | number ** 0.5  | `sqrt`|
 | `**`     | Exponentiation     | number ** (1/3) | `cube_root`|
-| `**`     | Exponentiation     | number ** (1/4) | `fourth_root`|
 | `/`      | Division           | `5 / 2`  | `2.5`  |
 | `//`     | Floor Division     | `5 // 2` | `2`    |
 | `//`     | Floor Division     | `-5 // 2` | `-3`   |
