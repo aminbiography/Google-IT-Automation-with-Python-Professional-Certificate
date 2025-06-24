@@ -39,19 +39,6 @@ age: int = 25
 score_list: list[int] = [90, 85, 78]
 ```
 
-## Built-in Functions
-- print() – Displays output.
-- type() – Returns the data type of an object.
-- str() – Converts data to a string.
-- sorted() – Sorts an iterable (returns a new list).
-- max() / min() – Return the highest or lowest value.
-
-```
-print(type("Hello"))              # <class 'str'>
-print(sorted([5, 2, 9]))          # [2, 5, 9]
-print(max([1, 4, 7]))             # 7
-```
-
 ## Arithmetic Operators
 
 | Operator | Meaning            | Example  | Result |
@@ -75,4 +62,82 @@ Fix: Use str() to convert number to string before concatenation.
 - ZeroDivisionError: Division by zero
 Fix: Validate the denominator before dividing.
 
-  
+## Built-in Functions
+| Function   | Purpose                                  |
+|------------|------------------------------------------|
+| `print()`  | Displays output to the console           |
+| `type()`   | Shows the data type of an object         |
+| `str()`    | Converts values to string                |
+| `sorted()` | Sorts iterables and returns a new list   |
+| `max()`    | Finds the highest value in a set or list |
+| `min()`    | Finds the lowest value in a set or list  |
+
+### `print()`
+
+**Purpose:** Displays one or more values to the console.
+
+**Example:**
+```python
+name = "Python"
+print("Welcome to", name)
+
+Output:
+Welcome to Python
+```
+### `type()`
+**Purpose:** Returns the data type of a given object.
+
+**Example:**
+```python
+value = 42
+print(type(value))
+
+Output:
+<class 'int'>
+```
+
+### `str()`
+**Purpose:** Converts a value to a string data type.  
+**Example:**
+```python
+age = 30
+print("I am " + str(age) + " years old.")
+
+Output:
+I am 30 years old.
+```
+
+### `sorted()`
+**Purpose:** Sorts elements in an iterable and returns a new list.  
+**Example:**
+```python
+numbers = [5, 2, 9, 1]
+print(sorted(numbers))
+
+Output:
+[1, 2, 5, 9]
+```
+
+### `max()`
+**Purpose:** Returns the largest value from a list or multiple arguments.  
+**Example:**
+```python
+scores = [85, 92, 78]
+print(max(scores))
+
+Output:
+92
+```
+
+### `min()`
+**Purpose:** Returns the smallest value from a list or multiple arguments.  
+**Example:**
+```python
+temperatures = [13, 18, 9, 21]
+print(min(temperatures))
+
+Output:
+9
+```
+
+---
