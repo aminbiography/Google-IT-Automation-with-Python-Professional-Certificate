@@ -59,6 +59,8 @@ print(max([1, 4, 7]))             # 7
 | `+`      | Addition           | `2 + 3`  | `5`    |
 | `-`      | Subtraction        | `5 - 2`  | `3`    |
 | `*`      | Multiplication     | `2 * 3`  | `6`    |
+| `**`     | Exponentiation     | 2 ** 3  | `8`    |
+| `**`     | Exponentiation     | number ** 0.5  | `Result`    |
 | `/`      | Division           | `5 / 2`  | `2.5`  |
 | `//`     | Floor Division     | `5 // 2` | `2`    |
 | `//`     | Floor Division     | `-5 // 2` | `-3`    |
