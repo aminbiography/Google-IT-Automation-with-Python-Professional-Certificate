@@ -62,6 +62,7 @@ print(max([1, 4, 7]))             # 7
 | `/`      | Division           | `5 / 2`  | `2.5`  |
 | `//`     | Floor Division     | `5 // 2` | `2`    |
 | `//`     | Floor Division     | `-5 // 2` | `-3`    |
+| `//`     | Floor Division     | `5 // -2` | `-3`    |
 | `%`      | Modulo (Remainder) | `5 % 2`  | `1`    |
 
 
