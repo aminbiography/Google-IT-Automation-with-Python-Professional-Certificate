@@ -137,7 +137,7 @@ Output: 9
 ```
 
 ---
-## Summary: Returning Values in Python
+## Returning Values in Python
 
 ### What are Return Values?
 Return values allow a function to send a result back to the part of the code that called it.  
