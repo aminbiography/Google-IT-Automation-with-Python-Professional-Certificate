@@ -21,7 +21,7 @@
 ## Type Conversion
 
 - **Implicit Conversion**:  
-  Python automatically converts types.                                 
+  Python automatically converts types.        &rarr;                         
   _Example_: `7 + 2.0 &rarr; 9.0`
 
 - **Explicit Conversion**:  
