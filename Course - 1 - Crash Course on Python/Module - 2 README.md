@@ -22,7 +22,7 @@
 
 - **Implicit Conversion**:  
   Python automatically converts types.                    
-  _Example_: `7 + 2.0  &rarr;  9.0`
+  _Example_: `7 + 2.0 = 9.0`
 
 - **Explicit Conversion**:  
   Use functions to convert types manually:
