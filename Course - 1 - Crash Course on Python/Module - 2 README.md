@@ -229,7 +229,7 @@ None
 
 ---
 
-## Key Style Principles
+## Key Style Principles in Python
 
 - **Self-documenting code**: Use meaningful variable and function names to make the code explain itself.
 - **Refactoring**: Improve unclear code by renaming and reorganizing for clarity.
@@ -240,4 +240,33 @@ None
 **Well-styled code = easier to read, fewer errors, and happier developers.**
 
 ---
+
+## Functions
+
+### Key Terms
+- **Return value:** Result sent back from a function  
+- **Parameter:** Input passed into a function  
+- **Refactoring:** Improving code readability without changing functionality  
+
+### Skills Practiced
+- Writing functions with multiple parameters  
+- Returning calculated results  
+- Performing conversions and calculations  
+- Combining text with return values in `print()` statements  
+- Converting types with `str()`  
+
+### Example
+
+```python
+def greet(name, age):
+    return "Hello, " + name + "! You are " + str(age) + " years old."
+
+print(greet("Amein", "8-80"))
+
+Output: Hello, Amein! You are 8-80 years old.
+```
+
+---
+
+
 
