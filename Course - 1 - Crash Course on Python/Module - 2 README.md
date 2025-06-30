@@ -16,6 +16,21 @@
   - `str` – String  
   - `bool` – Boolean (`True`/`False`)
 
+-**Keywords** are reserved words in programming languages that have special meanings and specific purposes.  
+They **cannot be used** as variable or function names.
+
+### Common Keywords and Their Uses:
+
+- **`in`** – Checks if a value exists in a sequence.  
+- **`not`** – Negates a condition (logical NOT).  
+- **`or`** – Returns `True` if at least one condition is `True`.  
+- **`for`** – Used to create a loop over a sequence.  
+- **`while`** – Starts a loop that runs while a condition is true.  
+- **`return`** – Exits a function and returns a value.
+
+These keywords help control the **flow and logic** of a program.
+
+
 ---
 
 ## Type Conversion
