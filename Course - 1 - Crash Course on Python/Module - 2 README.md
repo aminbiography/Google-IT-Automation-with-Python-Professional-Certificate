@@ -30,6 +30,11 @@ They **cannot be used** as variable or function names.
 
 These keywords help control the **flow and logic** of a program.
 
+- **Variable names** are identifiers used to store data in programming. Choosing effective variable names is essential for writing **readable, understandable, and maintainable** code.
+  - Use **letters, digits, and underscores** (but not as the first character).
+  - Avoid **special characters** (like `&`, `%`, `-`).
+  - Use **camelCase** or **snake_case** consistently.
+  - Make names **descriptive** and meaningful.
 
 ---
 
