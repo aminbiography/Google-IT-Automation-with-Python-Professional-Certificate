@@ -19,7 +19,7 @@
 - **Keywords** are reserved words in programming languages that have special meanings and specific purposes.  
 They **cannot be used** as variable or function names.
 
-- Common Keywords and Their Uses:
+  Common Keywords and Their Uses:
 
   - **`in`** – Checks if a value exists in a sequence.  
   - **`not`** – Negates a condition (logical NOT).  
