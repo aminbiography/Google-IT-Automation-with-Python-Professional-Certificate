@@ -228,3 +228,16 @@ None
 > `None` is a special data type that represents “no value.”
 
 ---
+
+## Key Style Principles
+
+- **Self-documenting code**: Use meaningful variable and function names to make the code explain itself.
+- **Refactoring**: Improve unclear code by renaming and reorganizing for clarity.
+- **Comments**: Use `#` to add helpful notes or explain complex parts. Good comments clarify *why*, not just *what*.
+- **Consistency**: Follow a style guide to keep code clean and predictable.
+- **Be a good neighbor**: Write code that others can understand and build on.
+
+**Well-styled code = easier to read, fewer errors, and happier developers.**
+
+---
+
