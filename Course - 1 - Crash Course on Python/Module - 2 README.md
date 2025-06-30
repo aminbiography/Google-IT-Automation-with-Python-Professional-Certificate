@@ -53,10 +53,13 @@ score_list: list[int] = [90, 85, 78]
 | `//`     | Floor Division     | `5 // 2` | `2`    |
 | `//`     | Floor Division     | `-5 // 2` | `-3`   |
 | `//`     | Floor Division     | `5 // -2` | `-3`   |
-| `%`      | Modulo (Remainder) | `5 % 2`  | `1`    |
->              Greater than            5 > 2            True
-<              Less than               2 < 5            True
-==             Equal to                5 == 5           True
+| `%`      | Modulo (Remainder) | `5 % 2`   | `1`    |
+| `> `     | Greater than       | `5 > 2`   | `True` |
+| `< `     | Less than          | `5 < 2`   | `False`|
+| `==`     | Equal to          | `5 == 5`   | `True` |
+                                   
+                                  
+                                     
 
 
 ## Common Errors
