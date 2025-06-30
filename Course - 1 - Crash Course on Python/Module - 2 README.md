@@ -243,30 +243,28 @@ None
 
 ## Functions
 
-### Key Terms
-- **Return value:** Result sent back from a function  
-- **Parameter:** Input passed into a function  
-- **Refactoring:** Improving code readability without changing functionality  
+- Key Terms
+  - **Return value:** Result sent back from a function  
+  - **Parameter:** Input passed into a function  
+  - **Refactoring:** Improving code readability without changing functionality  
 
-### Skills Practiced
-- Writing functions with multiple parameters  
-- Returning calculated results  
-- Performing conversions and calculations  
-- Combining text with return values in `print()` statements  
-- Converting types with `str()`  
+- Skills Practiced
+  - Writing functions with multiple parameters  
+  - Returning calculated results  
+  - Performing conversions and calculations  
+  - Combining text with return values in `print()` statements  
+  - Converting types with `str()`  
 
-### Example
+- Example
 
 ```python
 def greet(name, age):
     return "Hello, " + name + "! You are " + str(age) + " years old."
 
 print(greet("Amein", "8-80"))
-
-Output: Hello, Amein! You are 8-80 years old.
+Output:
+Hello, Amein! You are 8-80 years old.
 ```
 
 ---
-
-
 
