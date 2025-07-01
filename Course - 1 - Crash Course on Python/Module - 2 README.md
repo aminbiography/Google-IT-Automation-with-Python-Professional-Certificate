@@ -268,3 +268,22 @@ Hello, Amein! You are 8-80 years old.
 
 ---
 
+## Basic Comparisons and Logical Operators in Python
+
+Basic comparisons:  
+> (greater than), == (equal to), != (not equal), < (less than)
+
+**Example:**  
+`print(10 > 1) → True`
+
+Type mismatches cause errors:  
+Comparing different types like `1 < "1"` raises a `TypeError`
+
+Logical operators:  
+`and`, `or`, and `not` combine or reverse logical expressions
+
+**Example:**  
+`print(25 > 50 or 1 != 2) → True`
+
+---
+
