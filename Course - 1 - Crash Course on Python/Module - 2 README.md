@@ -271,7 +271,7 @@ Hello, Amein! You are 8-80 years old.
 ## Basic Comparisons and Logical Operators in Python
 
 Basic comparisons:  
-> (greater than), == (equal to), != (not equal), < (less than)
+```> (greater than), == (equal to), != (not equal), < (less than)```
 
 **Example:**  
 `print(10 > 1) → True`
