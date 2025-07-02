@@ -274,7 +274,7 @@ Basic comparisons:
 ```> (greater than), == (equal to), != (not equal), < (less than)```
 
 **Example:**  
-`print(10 > 1) &rarr; True`
+`print(10 > 1) $A \rightarrow B$ True`
 
 Type mismatches cause errors:  
 Comparing different types like `1 < "1"` raises a `TypeError`
@@ -283,7 +283,7 @@ Logical operators:
 `and`, `or`, and `not` combine or reverse logical expressions
 
 **Example:**  
-`print(25 > 50 or 1 != 2) &rarr; True`
+`print(25 > 50 or 1 != 2) $A \rightarrow B$ True`
 
 ---
 
