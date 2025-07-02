@@ -291,6 +291,7 @@ Logical operators:
 `print(25 > 50 or 1 != 2) -> True`
 
 - The `not` operator reverses the truth value of an expression.
+  
 | Expression  | Result  |
 | ----------- | ------- |
 | `not True`  | `False` |
