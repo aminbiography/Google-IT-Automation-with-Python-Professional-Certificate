@@ -283,10 +283,12 @@ Logical operators:
 `and`, `or`, and `not` combine or reverse logical expressions
 
 - The `and` operator returns True only if all conditions are True.
+
 **Example:**  
 `print(25 > 50 and 1 != 2) -> False`
 
 - `or` operator returns True if any one of the conditions is True.
+
 **Example:**  
 `print(25 > 50 or 1 != 2) -> True`
 
