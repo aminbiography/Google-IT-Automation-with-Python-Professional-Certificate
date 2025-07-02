@@ -296,8 +296,9 @@ Logical operators:
 | `not True`  | `False` |
 | `not False` | `True`  |
 
-`print(25 > 50 or 1 != 2)        # True
-print(not (25 > 50 or 1 != 2))  # False`
+```print(25 > 50 or 1 != 2)        # True```
+```print(not (25 > 50 or 1 != 2))  # False```
+
 
 
 ---
