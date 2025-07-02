@@ -282,8 +282,23 @@ Comparing different types like `1 < "1"` raises a `TypeError`
 Logical operators:  
 `and`, `or`, and `not` combine or reverse logical expressions
 
+- The `and` operator returns True only if all conditions are True.
+**Example:**  
+`print(25 > 50 and 1 != 2) -> False`
+
+- `or` operator returns True if any one of the conditions is True.
 **Example:**  
 `print(25 > 50 or 1 != 2) -> True`
+
+- The `not` operator reverses the truth value of an expression.
+| Expression  | Result  |
+| ----------- | ------- |
+| `not True`  | `False` |
+| `not False` | `True`  |
+
+`print(25 > 50 or 1 != 2)        # True
+print(not (25 > 50 or 1 != 2))  # False`
+
 
 ---
 
