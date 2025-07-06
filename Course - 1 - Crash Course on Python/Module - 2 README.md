@@ -303,26 +303,61 @@ Logical operators:
 
 ```print(not (25 > 50 or 1 != 2))  # False```
 
-- Key Comparison Operators in Python
+### Key Comparison Operators in Python
 
-| Operator | Name                      | Example   | Meaning                         |
-|----------|---------------------------|-----------|---------------------------------|
-| `==`     | Equality                  | `a == b`  | True if `a` equals `b`          |
-| `!=`     | Not equal to              | `a != b`  | True if `a` is not equal to `b`|
-| `>`      | Greater than              | `a > b`   | True if `a` is larger than `b` |
-| `<`      | Less than                 | `a < b`   | True if `a` is smaller than `b`|
-| `>=`     | Greater than or equal to  | `a >= b`  | True if `a` is ≥ `b`            |
-| `<=`     | Less than or equal to     | `a <= b`  | True if `a` is ≤ `b`            |
+#### Numeric Comparison Operators
 
----
+| Operator | Name                      | Example   | Meaning                          |
+|----------|---------------------------|-----------|----------------------------------|
+| `==`     | Equality                  | `a == b`  | True if `a` equals `b`           |
+| `!=`     | Not equal to              | `a != b`  | True if `a` is not equal to `b` |
+| `>`      | Greater than              | `a > b`   | True if `a` is larger than `b`  |
+| `<`      | Less than                 | `a < b`   | True if `a` is smaller than `b` |
+| `>=`     | Greater than or equal to  | `a >= b`  | True if `a` is greater than or equal to `b` |
+| `<=`     | Less than or equal to     | `a <= b`  | True if `a` is less than or equal to `b`   |
 
-- Examples:
+##### Examples
 
 ```python
 print(32 == 30 + 2)        # → True
 print(5 + 10 == 6 + 7)     # → False
 print(4 / 2 < 8 - 4)       # → True
 print(12 * 2 >= 24)        # → True
+```
+
+---
+
+### String Comparison Operators
+
+| Operator | Description                                        | Example                          |
+|----------|----------------------------------------------------|----------------------------------|
+| `==`     | Equal to — returns `True` if strings are the same  | `"cat" == "cat"` → `True`        |
+| `!=`     | Not equal to — returns `True` if strings differ    | `"dog" != "cat"` → `True`        |
+| `>`      | Greater than — based on Unicode (alphabetical)     | `"zebra" > "apple"` → `True`     |
+| `<`      | Less than — checks if left comes before right      | `"apple" < "banana"` → `True`    |
+| `>=`     | Greater than or equal to                           | `"abc" >= "abc"` → `True`        |
+| `<=`     | Less than or equal to                              | `"abc" <= "bcd"` → `True`        |
+
+#### Examples & Concepts
+
+- Comparing identical strings returns `True`:
+
+```python
+print("a string" == "a string")  # True
+```
+
+- Different data types can't be compared using `<` or `>`:
+
+```python
+print("Five" < 6)  # TypeError
+```
+
+- Unicode values are used in string comparisons:
+  - Uppercase A–Z: Unicode 65–90
+  - Lowercase a–z: Unicode 97–122
+
+```python
+print("Brown" < "brown")  # True (because 'B' < 'b' in Unicode)
 ```
 
 ---
