@@ -303,5 +303,27 @@ Logical operators:
 
 ```print(not (25 > 50 or 1 != 2))  # False```
 
+- Key Comparison Operators in Python
+
+| Operator | Name                      | Example   | Meaning                         |
+|----------|---------------------------|-----------|---------------------------------|
+| `==`     | Equality                  | `a == b`  | True if `a` equals `b`          |
+| `!=`     | Not equal to              | `a != b`  | True if `a` is not equal to `b`|
+| `>`      | Greater than              | `a > b`   | True if `a` is larger than `b` |
+| `<`      | Less than                 | `a < b`   | True if `a` is smaller than `b`|
+| `>=`     | Greater than or equal to  | `a >= b`  | True if `a` is ≥ `b`            |
+| `<=`     | Less than or equal to     | `a <= b`  | True if `a` is ≤ `b`            |
+
+---
+
+-- Examples:
+
+```python
+print(32 == 30 + 2)        # → True
+print(5 + 10 == 6 + 7)     # → False
+print(4 / 2 < 8 - 4)       # → True
+print(12 * 2 >= 24)        # → True
+```
+
 ---
 
