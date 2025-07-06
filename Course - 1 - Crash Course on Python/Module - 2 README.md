@@ -360,5 +360,32 @@ print("Five" < 6)  # TypeError
 print("Brown" < "brown")  # True (because 'B' < 'b' in Unicode)
 ```
 
+### `or` Operator in Python
+
+The `or` logical operator returns `True` if **at least one** of the expressions is `True`. It is used to combine conditions where **only one condition needs to be satisfied**.
+
+---
+
+#### Truth Table
+
+| Expression 1 | Expression 2 | Result |
+|--------------|--------------|--------|
+| `True`       | `True`       | `True` |
+| `True`       | `False`      | `True` |
+| `False`      | `True`       | `True` |
+| `False`      | `False`      | `False` |
+
+---
+
+##### Example
+
+```python
+country = "United States"
+city = "New York City"
+
+print(country == "New York City" or city == "New York City")  # → True
+```
+
+
 ---
 
