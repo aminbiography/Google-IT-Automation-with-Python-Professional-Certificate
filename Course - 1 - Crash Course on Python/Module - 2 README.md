@@ -316,7 +316,7 @@ Logical operators:
 
 ---
 
-   - Examples:
+- Examples:
 
 ```python
 print(32 == 30 + 2)        # → True
