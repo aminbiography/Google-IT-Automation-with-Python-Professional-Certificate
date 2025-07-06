@@ -388,7 +388,7 @@ print(country == "New York City" or city == "New York City")  # → True
 
 ### `if` Statement in Python
 
-The `if` statement allows your program to **branch** and execute code **only when a specific condition is met**. It’s fundamental for controlling program flow.
+The `if` statement allows program to **branch** and execute code **only when a specific condition is met**. It’s fundamental for controlling program flow.
 
 ---
 
