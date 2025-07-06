@@ -386,6 +386,19 @@ city = "New York City"
 print(country == "New York City" or city == "New York City")  # → True
 ```
 
+### `if` Statement in Python
+
+The `if` statement allows your program to **branch** and execute code **only when a specific condition is met**. It’s fundamental for controlling program flow.
+
+---
+
+##### Example Code
+
+```python
+def hint_username(username):
+    if len(username) < 3:
+        print("Invalid username. Must be at least 3 characters long")
+```
 
 ---
 
