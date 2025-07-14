@@ -402,3 +402,145 @@ def hint_username(username):
 
 ---
 
+## Functions
+
+- Defined using the `def` keyword.
+- Accept parameters and return values.
+- Promote reusable, modular code.
+
+**Example:**
+
+```python
+def greet(name):
+    return "Hello, " + name
+
+print(greet("Alice"))
+```
+
+**Output:**
+```
+Hello, Alice
+```
+
+---
+
+## Conditionals (`if`, `elif`, `else`)
+
+- Control flow based on logical conditions.
+- `if` checks a condition; `elif` checks additional conditions; `else` catches all other cases.
+- Use comparison (`==`, `!=`, `>`, `<`) and logical operators (`and`, `or`, `not`).
+
+**Example:**
+
+```python
+temp = 45
+
+if temp > 65:
+    clothing = "T-Shirt"
+elif temp > 50:
+    clothing = "Sweatshirt"
+elif temp > 32:
+    clothing = "Jacket"
+else:
+    clothing = "Heavy Coat"
+
+print(clothing)
+```
+
+**Output:**
+```
+Jacket
+```
+
+---
+
+## Writing if-elif-else blocks
+
+```python
+temp = 60
+
+if temp > 65:
+    clothing = "T-Shirt"
+elif temp > 50:
+    clothing = "Sweatshirt"
+elif temp > 32:
+    clothing = "Jacket"
+else:
+    clothing = "Heavy Coat"
+
+print(clothing)
+```
+
+**Output:**
+```
+Sweatshirt
+```
+
+---
+
+## Logical and Comparison Operators
+
+- Used to compare values or combine conditions.
+- Case-sensitive with strings.
+
+**Example (string comparison):**
+
+```python
+print("blue" == "Blue")
+```
+
+**Output:**
+```
+False
+```
+
+**Example (logical operation):**
+
+```python
+print((5 > 2) and (3 < 7))
+```
+
+**Output:**
+```
+True
+```
+
+---
+
+## Returning results in functions
+
+```python
+def safe_division(numerator, denominator):
+    if denominator == 0:
+        return 0
+    return numerator / denominator
+
+print(safe_division(10, 2))
+print(safe_division(5, 0))
+```
+
+**Output:**
+```
+5.0
+0
+```
+
+---
+
+## Using nested and complex conditions
+
+```python
+number = 25
+
+if number <= 5:
+    print("Small")
+elif number == 33:
+    print("Match")
+elif number < 32 and number > 6:
+    print("Between 6 and 32")
+```
+
+**Output:**
+```
+Between 6 and 32
+```
