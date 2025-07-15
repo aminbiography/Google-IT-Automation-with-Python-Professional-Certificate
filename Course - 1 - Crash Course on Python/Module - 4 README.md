@@ -59,7 +59,7 @@ Validating user input until it's acceptable
 Monitoring or background task loops (e.g., checking for updates or alerts)
 
 ## Common Pitfall: Infinite Loops
-If you don’t update the loop variable or the condition never becomes false, the loop will continue forever.
+If don’t update the loop variable or the condition never becomes false, the loop will continue forever.
 
 Example of an infinite loop:
 ```
