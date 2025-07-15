@@ -1,6 +1,6 @@
 # Python Key Concepts for Automation: While Loops
 
-A **while loop** allows you to repeatedly execute a block of code **as long as a specified condition remains true**. It's especially useful when the number of repetitions is **not known ahead of time**, making it ideal for automation tasks.
+A **while loop** allows to repeatedly execute a block of code **as long as a specified condition remains true**. It's especially useful when the number of repetitions is **not known ahead of time**, making it ideal for automation tasks.
 
 ---
 
