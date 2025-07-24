@@ -69,3 +69,76 @@ while x < 5:
     # missing x += 1
 ```
 Always make sure your loop has a clear exit condition.
+
+---
+
+## Common Errors in Loops
+
+- **Uninitialized Variables:**  
+  Always initialize variables used in the loop’s condition.
+
+- **Infinite Loops:**  
+  Ensure variables in the condition are modified inside the loop to avoid infinite loops.
+
+- **Prevention Tips:**  
+  Use the `break` statement or refine loop conditions to ensure eventual termination.
+
+---
+
+## Terms
+
+- **While loop:**  
+  Repeats a block while a condition is true.
+
+- **Infinite loop:**  
+  A loop with no end condition or a condition that never becomes false.
+
+- **Break:**  
+  Stops loop execution immediately.
+
+- **Pass:**  
+  Placeholder; does nothing but is syntactically required.
+
+---
+
+## Math Concepts on the Practice Quiz
+
+- **Prime Numbers:**  
+  Numbers with only two factors—1 and itself (e.g., 2, 3, 5...).
+
+- **Prime Factors:**  
+  Prime numbers that divide a given number (e.g., 2 and 5 for 10).
+
+- **Divisor:**  
+  A number that divides another without a remainder.
+
+- **Sum of Divisors:**  
+  Add all divisors of a number.
+
+- **Multiplication Table:**  
+  A list of products formed by multiplying a number with others sequentially (e.g., 4×1, 4×2...).
+
+## Coding Skills – Skill Group 1
+
+**Skills Covered:**
+
+- Initialize variables.
+- Use a while loop with a valid condition.
+- Avoid infinite loops.
+- Increment variables inside loops.
+
+**Example:**  
+Function `count_factors()` counts the number of integer factors of a given number using a loop and modulo operation.
+
+---
+
+## Coding Skills – Skill Group 2
+
+**Skills Covered:**
+
+- Assign correct data types to variables before using in loops.
+- Use `break` to exit loops early.
+
+**Example:**  
+Function `addition_table()` prints an addition table and exits early if the sum exceeds 20.
+
