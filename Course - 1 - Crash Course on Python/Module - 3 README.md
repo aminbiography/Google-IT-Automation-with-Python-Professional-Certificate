@@ -245,3 +245,55 @@ print(squared)  # [1, 4, 9, 16, 25]
 Use `break`, `continue`, and alternative tools (`map()`, `zip()`, `enumerate()`) for better efficiency.
 
 ---
+
+## Slicing and Joining Strings in Python
+
+### What is it?
+- **Slicing**: Extract part of a string using `[start:end:step]`.
+- **Joining**: Combine strings using `+` or `.join()`.
+
+---
+
+### Slicing Examples
+```python
+s = "Greetings, Earthlings"
+
+print(s[0])        # G
+print(s[4:8])      # ting
+print(s[11:])      # Earthlings
+print(s[:5])       # Greet
+print(s[-10:])     # Earthlings
+print(s[0::2])     # Getns atlns
+print(s[::-1])     # sgnilhtraE ,sgniteerG
+print(s[55:])      # (empty string)
+```
+
+---
+
+### Joining Examples
+```python
+print("Hello" + " " + "world")                  # Hello world
+print(" ".join(["Hello", "world"]))             # Hello world
+
+name = "Alice"
+print("Hello, " + name + "!")                   # Hello, Alice!
+```
+
+---
+
+### Combine Slice + Join (Phone Formatter)
+```python
+def format_phone(p):
+    return "(" + p[:3] + ") " + p[3:6] + "-" + p[-4:]
+
+print(format_phone("2025551212"))               # (202) 555-1212
+```
+
+---
+
+### Summary
+- Use `[start:end]` to slice.
+- Use `+` or `.join()` to concatenate.
+- Negative indices count from end.
+- Use together for formatting tasks (e.g., phone numbers).
+
