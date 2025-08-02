@@ -1,7 +1,5 @@
 # Python Looping Concepts for Automation
 
-**Comprehensive Guide (While Loops, For Loops, Strings, Nested Loops, Math, and More)**
-
 ---
 
 ## What Are Loops?
