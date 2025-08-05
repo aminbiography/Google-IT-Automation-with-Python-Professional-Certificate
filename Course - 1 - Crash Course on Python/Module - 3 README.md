@@ -77,17 +77,139 @@ Not there yet, x=4
 x=5
 ```
 
-### Common Pitfalls
+### Common Pitfalls in While Loops
 
-- **Infinite loop**: Forgetting to update the loop variable
-- **Uninitialized variables**
-- Use `break` to exit early
+#### Infinite Loop  
+Occurs when the loop condition **never becomes false**, often due to **missing update**.
 
-### Use Cases
+##### Example:
+```python
+count = 1
+while count <= 3:
+    print("Count is:", count)
+    # Missing: count += 1
+```
 
-- Retrying failed operations
-- Waiting for user input
-- Background monitoring tasks
+##### Output:
+```
+Count is: 1  
+Count is: 1  
+Count is: 1  
+... (infinite)
+```
+
+---
+
+#### Uninitialized Variables  
+Using a variable **before assigning a value** causes an error.
+
+##### Example:
+```python
+while num < 3:
+    print(num)
+    num += 1
+```
+
+##### Output:
+```
+NameError: name 'num' is not defined
+```
+
+---
+
+#### Use `break` to Exit Early  
+`break` exits the loop **immediately**, even if the condition is still true.
+
+##### Example:
+```python
+count = 1
+while True:
+    print("Count is:", count)
+    if count == 2:
+        break
+    count += 1
+```
+
+##### Output:
+```
+Count is: 1  
+Count is: 2
+```
+
+---
+
+### Use Cases of While Loops
+
+### Retrying Failed Operations  
+Useful when an operation (like a network call) might fail and needs retries.
+
+##### Example:
+```python
+attempts = 0
+success = False
+
+while not success and attempts < 3:
+    print("Trying...")
+    # Simulate failure
+    success = False
+    attempts += 1
+```
+
+##### Output:
+```
+Trying...  
+Trying...  
+Trying...
+```
+
+---
+
+#### Waiting for User Input  
+Run until a specific user input is received.
+
+##### Example:
+```python
+user_input = ""
+while user_input != "exit":
+    user_input = input("Type 'exit' to stop: ")
+```
+
+##### Output (Example run):
+```
+Type 'exit' to stop: hello  
+Type 'exit' to stop: try again  
+Type 'exit' to stop: exit
+```
+
+---
+
+#### Background Monitoring Tasks  
+Continuously check for a condition, like a file change or signal.
+
+##### Example:
+```python
+import time
+
+counter = 0
+while counter < 3:
+    print("Monitoring...")
+    time.sleep(1)
+    counter += 1
+```
+
+##### Output:
+```
+Monitoring...  
+(wait 1s)  
+Monitoring...  
+(wait 1s)  
+Monitoring...
+```
+
+---
+
+These examples help clarify how to properly use `while` loops and avoid common mistakes.
+
 
 ---
 
