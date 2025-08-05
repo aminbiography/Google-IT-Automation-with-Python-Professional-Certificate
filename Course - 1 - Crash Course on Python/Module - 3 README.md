@@ -145,26 +145,60 @@ o
 ### With Indexing
 
 ```python
+greeting = "Hello"
 for i in range(len(greeting)):
     print(greeting[i])
+```
+
+**Output:**
+
+```
+H
+e
+l
+l
+o
 ```
 
 ### While Loop with Index
 
 ```python
+greeting = "Hello"
 index = 0
 while index < len(greeting):
     print(greeting[index])
     index += 1
 ```
 
+**Output:**
+
+```
+H
+e
+l
+l
+o
+```
+
 ### While Loop with Slicing
 
 ```python
+greeting = "Hello"
+
 index = 0
 while index < len(greeting):
     print(greeting[index:index+1])
     index += 1
+```
+
+**Output:**
+
+```
+H
+e
+l
+l
+o
 ```
 
 ---
