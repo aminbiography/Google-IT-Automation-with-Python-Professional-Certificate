@@ -14,13 +14,49 @@ They are essential for:
 
 ---
 
-## While Loops
+## While Loops – Core Components
 
-### Core Components
+A **while loop** repeatedly executes a block of code **as long as a condition is true**. It has three main parts:
 
-- **Initialization**: Set starting values.
-- **Condition**: Evaluated before each iteration.
-- **Update**: Change variables inside the loop.
+---
+
+### 1. Initialization  
+Set starting values of variables **before** the loop begins.
+
+### 2. Condition  
+A **boolean expression** checked **before** each loop iteration.
+
+### 3. Update  
+Modify variables **inside** the loop to eventually make the condition false.
+
+---
+
+### Example in Python:
+
+```python
+# Initialization
+count = 1
+
+# While loop with condition
+while count <= 3:
+    print("Count is:", count)
+    
+    # Update
+    count += 1
+```
+
+---
+
+### Output:
+```
+Count is: 1  
+Count is: 2  
+Count is: 3
+```
+
+---
+
+This loop starts with `count = 1`, runs while `count <= 3`, and increases `count` by 1 each time. When `count` becomes 4, the loop stops.
 
 ### Example
 
