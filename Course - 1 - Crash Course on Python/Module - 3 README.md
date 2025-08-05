@@ -132,6 +132,16 @@ for c in greeting:
     print(c)
 ```
 
+**Output:**
+
+```
+H
+e
+l
+l
+o
+```
+
 ### With Indexing
 
 ```python
