@@ -213,85 +213,100 @@ These examples help clarify how to properly use `while` loops and avoid common m
 
 ---
 
-## For Loops
+## For Loops in Python
 
-### Basic Syntax
+A **for loop** is used to iterate over a **sequence** (like a list, string, range, or file).
 
+##### Basic Syntax
 ```python
 for item in sequence:
     # do something
 ```
 
-Iterates over:
+---
 
-- Lists
-- Strings
-- Ranges
-- Files
+### Iterates Over:
 
-### Example with `range()`
+#### 1. Lists  
+A list contains multiple values. The loop runs once for each item.
 
+##### Example:
 ```python
-for x in range(5):
-    print(x)
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
 ```
 
-**Output:**
-
+##### Output:
 ```
-0
-1
-2
-3
-4
+apple  
+banana  
+cherry
 ```
 
 ---
 
-## Range Parameters
+#### 2. Strings  
+Loops over **each character** in the string.
 
+##### Example:
 ```python
-range(start, stop, step)
+word = "hi"
+for char in word:
+    print(char)
 ```
 
-- `start` – default is 0
-- `stop` – exclusive
-- `step` – default is 1
+##### Output:
+```
+h  
+i
+```
 
-### Example
+---
 
+### 3. Ranges  
+Generates a sequence of numbers. Commonly used for looping a fixed number of times.
+
+##### Example:
 ```python
-for i in range(2, 10, 2):
+for i in range(3):
     print(i)
 ```
 
-**Output:**
-
+##### Output:
 ```
+0  
+1  
 2
-4
-6
-8
 ```
 
 ---
 
-## Looping Over Strings
+### 4. Files  
+Loops through a file **line by line**.
 
-### For Loop
+##### Example:
 ```python
-greeting = "Hello"
-for c in greeting:
-    print(c)
+# Assuming a file named 'data.txt' contains:
+# Line 1
+# Line 2
+
+with open('data.txt', 'r') as file:
+    for line in file:
+        print(line.strip())
 ```
-**Output:**
+
+##### Output:
 ```
-H
-e
-l
-l
-o
+Line 1  
+Line 2
 ```
+
+---
+
+### Summary:
+- Use `for` loops when **know how many times** or **what to loop over**.
+- It's great for **collections**, **strings**, **numeric ranges**, and **file reading**.
 
 ---
 
