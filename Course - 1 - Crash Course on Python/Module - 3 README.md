@@ -56,7 +56,7 @@ Count is: 3
 
 This loop starts with `count = 1`, runs while `count <= 3`, and increases `count` by 1 each time. When `count` becomes 4, the loop stops.
 
-### Example
+### More Example
 
 ```python
 x = 0
