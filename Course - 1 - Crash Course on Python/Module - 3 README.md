@@ -122,18 +122,13 @@ for i in range(2, 10, 2):
 
 ## Looping Over Strings
 
-Strings are sequences of characters, and you can loop over each character.
-
 ### For Loop
-
 ```python
 greeting = "Hello"
 for c in greeting:
     print(c)
 ```
-
 **Output:**
-
 ```
 H
 e
@@ -142,16 +137,15 @@ l
 o
 ```
 
-### With Indexing
+---
 
+### With Indexing (`range()` + `len()`)
 ```python
 greeting = "Hello"
 for i in range(len(greeting)):
     print(greeting[i])
 ```
-
 **Output:**
-
 ```
 H
 e
@@ -160,8 +154,9 @@ l
 o
 ```
 
-### While Loop with Index
+---
 
+### While Loop with Index
 ```python
 greeting = "Hello"
 index = 0
@@ -169,9 +164,7 @@ while index < len(greeting):
     print(greeting[index])
     index += 1
 ```
-
 **Output:**
-
 ```
 H
 e
@@ -180,19 +173,17 @@ l
 o
 ```
 
-### While Loop with Slicing
+---
 
+### While Loop with Slicing
 ```python
 greeting = "Hello"
-
 index = 0
 while index < len(greeting):
     print(greeting[index:index+1])
     index += 1
 ```
-
 **Output:**
-
 ```
 H
 e
@@ -205,19 +196,27 @@ o
 
 ## Nested Loops
 
-Use when comparing or combining elements in two sequences.
-
 ### Domino Example
-
 ```python
 for left in range(7):
     for right in range(left, 7):
         print(f"[{left}|{right}]", end=" ")
     print()
 ```
+**Output:**
+```
+[0|0] [0|1] [0|2] [0|3] [0|4] [0|5] [0|6] 
+[1|1] [1|2] [1|3] [1|4] [1|5] [1|6] 
+[2|2] [2|3] [2|4] [2|5] [2|6] 
+[3|3] [3|4] [3|5] [3|6] 
+[4|4] [4|5] [4|6] 
+[5|5] [5|6] 
+[6|6]
+```
+
+---
 
 ### Team Matchups Example
-
 ```python
 teams = ['Dragons', 'Wolves', 'Pandas', 'Unicorns']
 for home_team in teams:
@@ -225,17 +224,27 @@ for home_team in teams:
         if home_team != away_team:
             print(f"{home_team} vs {away_team}")
 ```
-
-### Performance Warning
-
-A nested loop of 10,000 x 10,000 = **100 million iterations** (may take hours!). Use carefully.
+**Output:**
+```
+Dragons vs Wolves
+Dragons vs Pandas
+Dragons vs Unicorns
+Wolves vs Dragons
+Wolves vs Pandas
+Wolves vs Unicorns
+Pandas vs Dragons
+Pandas vs Wolves
+Pandas vs Unicorns
+Unicorns vs Dragons
+Unicorns vs Wolves
+Unicorns vs Pandas
+```
 
 ---
 
-## Looping for `Math`
+## Looping for Math
 
-### Sum & Average
-
+### Sum and Average
 ```python
 values = [23, 52, 59, 37, 48]
 sum = 0
@@ -245,99 +254,125 @@ for value in values:
     length += 1
 print("Total sum:", sum, "- Average:", sum / length)
 ```
+**Output:**
+```
+Total sum: 219 - Average: 43.8
+```
+
+---
 
 ### Product (Factorial)
-
 ```python
 product = 1
 for n in range(1, 10):
     product *= n
-print(product)  # Output: 362880
+print(product)
+```
+**Output:**
+```
+362880
 ```
 
 ---
 
 ## List Comprehensions
 
-Concise way to create new lists using loops.
-
-### Example
-
+### Example: Squared Numbers
 ```python
 numbers = [1, 2, 3, 4, 5]
 squared = [x ** 2 for x in numbers]
-print(squared)  # [1, 4, 9, 16, 25]
+print(squared)
+```
+**Output:**
+```
+[1, 4, 9, 16, 25]
 ```
 
-### Supports:
+---
 
-- Conditions
-- Nested loops
-- Function calls
+## Common Pitfalls & Performance
+
+- **Infinite loops**: Always update loop variables!
+- **Large data**: Avoid deep nested loops unless necessary.
+- **Missing initialization**: Always initialize your sum, count, index, etc.
+
+Performance estimates:
+- Looping over 10,000 items = ~10 seconds (1ms/item)
+- Nested loop 10,000 x 10,000 = 100 million iterations = ! ~27+ hours!
+
+Use tools like:
+- `break`, `continue`
+- `enumerate()`, `zip()`, `map()` for efficiency
 
 ---
 
-## Common Pitfalls & Performance Tips
+## Slicing Strings
 
-- **Infinite Loops**: Always update loop variables
-- **Large Data**: Be cautious with nested loops
-- **Missing Initializations**: Always set starting values
-- **Loop Complexity**:
-  - Single loop over 10,000 items = ~10 seconds (1ms/item)
-  - Nested loop over 10,000 items = ~27+ hours!
-
-Use `break`, `continue`, and alternative tools (`map()`, `zip()`, `enumerate()`) for better efficiency.
-
----
-
-## Slicing and Joining Strings in Python
-
-### What is it?
-- **Slicing**: Extract part of a string using `[start:end:step]`.
-- **Joining**: Combine strings using `+` or `.join()`.
-
----
-
-### Slicing Examples
 ```python
 s = "Greetings, Earthlings"
+print(s[0])         # G
+print(s[4:8])       # ting
+print(s[11:])       # Earthlings
+print(s[:5])        # Greet
+print(s[-10:])      # Earthlings
+print(s[0::2])      # Getns atlns
+print(s[::-1])      # sgnilhtraE ,sgniteerG
+print(s[55:])       # (empty string)
+```
 
-print(s[0])        # G
-print(s[4:8])      # ting
-print(s[11:])      # Earthlings
-print(s[:5])       # Greet
-print(s[-10:])     # Earthlings
-print(s[0::2])     # Getns atlns
-print(s[::-1])     # sgnilhtraE ,sgniteerG
-print(s[55:])      # (empty string)
+**Output:**
+```
+G
+ting
+Earthlings
+Greet
+Earthlings
+Getns atlns
+sgnilhtraE ,sgniteerG
 ```
 
 ---
 
-### Joining Examples
+## Joining Strings
+
 ```python
-print("Hello" + " " + "world")                  # Hello world
-print(" ".join(["Hello", "world"]))             # Hello world
+print("Hello" + " " + "world")
+print(" ".join(["Hello", "world"]))
 
 name = "Alice"
-print("Hello, " + name + "!")                   # Hello, Alice!
+print("Hello, " + name + "!")
+```
+
+**Output:**
+```
+Hello world
+Hello world
+Hello, Alice!
 ```
 
 ---
 
-### Combine Slice + Join (Phone Formatter)
+## Combine Slice + Join: Phone Formatter
+
 ```python
 def format_phone(p):
     return "(" + p[:3] + ") " + p[3:6] + "-" + p[-4:]
 
-print(format_phone("2025551212"))               # (202) 555-1212
+print(format_phone("2025551212"))
+```
+
+**Output:**
+```
+(202) 555-1212
 ```
 
 ---
 
-### Summary
-- Use `[start:end]` to slice.
-- Use `+` or `.join()` to concatenate.
-- Negative indices count from end.
-- Use together for formatting tasks (e.g., phone numbers).
+## Summary
 
+- Use `for`, `while`, and `range()` to loop through strings and lists.
+- Use `[start:end:step]` for slicing.
+- Use `+` or `.join()` for combining strings.
+- Avoid nested loops with huge data sizes.
+- Use list comprehensions for concise list creation.
+- Always initialize variables and update loop counters.
