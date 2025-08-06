@@ -547,3 +547,72 @@ print(format_phone("2025551212"))
 - Avoid nested loops with huge data sizes.
 - Use list comprehensions for concise list creation.
 - Always initialize variables and update loop counters.
+
+---
+
+# Recursion
+
+**Recursion** is a programming technique where a function calls itself to solve a smaller version of the original problem.
+
+It’s useful for problems that can be broken down into similar sub-problems (like **factorials**, **Fibonacci sequences**, etc.).
+
+---
+
+## Example: Factorial Function Using Recursion
+
+```python
+def factorial(n):
+  if n < 2:
+    return 1
+  return n * factorial(n-1)
+```
+
+- This function returns `1` if `n < 2` (**base case**).
+- Otherwise, it returns `n * factorial(n-1)` (**recursive case**).
+- This continues until it reaches the base case.
+
+---
+
+## With Print Statements for Clarity
+
+```python
+def factorial(n):
+  print("Factorial called with " + str(n))
+  if n < 2:
+    print("Returning 1")
+    return 1
+  result = n * factorial(n-1)
+  print("Returning " + str(result) + " for factorial of " + str(n))
+  return result
+```
+
+---
+
+## Calling `factorial(4)` Produces:
+
+```
+Factorial called with 4  
+Factorial called with 3  
+Factorial called with 2  
+Factorial called with 1  
+Returning 1  
+Returning 2 for factorial of 2  
+Returning 6 for factorial of 3  
+Returning 24 for factorial of 4  
+```
+
+---
+
+## Final Output:
+
+```
+24
+```
+
+---
+
+## Key Takeaway:
+
+Recursion solves problems by breaking them into smaller subproblems, with each recursive call approaching a **base case** that ends the loop. It's powerful but must include a proper base case to avoid **infinite recursion**.
+
+---
