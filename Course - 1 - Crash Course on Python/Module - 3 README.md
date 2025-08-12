@@ -590,9 +590,8 @@ print(factorial(5))
 - Otherwise, it returns `n * factorial(n-1)` (**recursive case**).
 - This continues until it reaches the base case.
 
----
 
-## With Print Statements for Clarity
+### With Print Statements for Clarity
 
 ```python
 def factorial(n):
@@ -620,13 +619,13 @@ Returning 6 for factorial of 3
 Returning 24 for factorial of 4  
 ```
 
----
-
 **Final Output:**
 
 ```
 24
 ```
+
+---
 
 ## **Recursion for Hierarchical Structures**
 
