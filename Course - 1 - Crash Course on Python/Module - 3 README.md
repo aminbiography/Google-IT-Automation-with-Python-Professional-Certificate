@@ -604,8 +604,6 @@ def factorial(n):
   return result
 ```
 
----
-
 **Calling `factorial(4)` Produces:**
 
 ```
