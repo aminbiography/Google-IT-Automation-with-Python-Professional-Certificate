@@ -629,7 +629,7 @@ Returning 24 for factorial of 4
 
 ```python
 def count_files(dir_structure):
-    if not dir_structure:
+    if dir_structure is None:
         return 0
     total = len(dir_structure.get("files", []))
     for sub in dir_structure.get("subdirs", []):
