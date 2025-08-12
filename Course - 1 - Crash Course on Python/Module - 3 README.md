@@ -550,7 +550,7 @@ print(format_phone("2025551212"))
 
 ---
 
-# Recursion
+## Recursion
 
 **Recursion** is a programming technique where a function calls itself to solve a smaller version of the original problem.
 
@@ -558,13 +558,32 @@ It’s useful for problems that can be broken down into similar sub-problems (li
 
 ---
 
-## Example: Factorial Function Using Recursion
-
-```python
+##### Example: Factorial Function Using Recursion
+```
 def factorial(n):
-  if n < 2:
-    return 1
-  return n * factorial(n-1)
+    if n < 2:
+        return 1
+    return n * factorial(n - 1)
+```
+**Example usage**
+```
+print(factorial(5))
+```
+**Output:**
+```
+120
+```
+
+**Step-by-step recursion for factorial(5):**
+
+```
+# factorial(5)
+# = 5 × factorial(4)
+# = 5 × (4 × factorial(3))
+# = 5 × (4 × (3 × factorial(2)))
+# = 5 × (4 × (3 × (2 × factorial(1))))
+# = 5 × (4 × (3 × (2 × 1)))
+# = 120
 ```
 
 - This function returns `1` if `n < 2` (**base case**).
@@ -588,7 +607,7 @@ def factorial(n):
 
 ---
 
-## Calling `factorial(4)` Produces:
+**Calling `factorial(4)` Produces:**
 
 ```
 Factorial called with 4  
@@ -603,10 +622,37 @@ Returning 24 for factorial of 4
 
 ---
 
-## Final Output:
+**Final Output:**
 
 ```
 24
+```
+
+## **Recursion for Hierarchical Structures**
+
+```python
+def count_files(dir_structure):
+    if not dir_structure:
+        return 0
+    total = len(dir_structure.get("files", []))
+    for sub in dir_structure.get("subdirs", []):
+        total += count_files(sub)
+    return total
+```
+
+**Example**
+```
+filesystem = {
+    "files": ["a.txt", "b.txt"],
+    "subdirs": [
+        {"files": ["c.txt"], "subdirs": []}
+    ]
+}
+print(count_files(filesystem))
+```
+**Output:**
+```
+3
 ```
 
 ---
