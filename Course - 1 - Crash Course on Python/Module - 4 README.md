@@ -1,25 +1,66 @@
 # Python Automation: Lists, Tuples, Dictionaries, Sets, Collections and Control Flow
 
-### 1. **List**
+---
 
-Mutable, ordered collection.
+## **Strings**
+
+**Description:** Strings are sequences of characters, immutable in Python. They support many methods for text manipulation.
+**Example:**
 
 ```python
-fruits = ["apple", "banana", "cherry"]
-print(fruits[1])
+text = "hello world"
+print(text.upper())
 ```
 
 **Output:**
 
 ```
-banana
+HELLO WORLD
 ```
 
 ---
 
-### 2. **Tuple**
+## **Lists**
 
-Immutable, ordered collection.
+**Description:** Lists are ordered, mutable collections that can store any data type.
+**Example:**
+
+```python
+fruits = ["apple", "banana"]
+fruits.append("cherry")
+print(fruits)
+```
+
+**Output:**
+
+```
+['apple', 'banana', 'cherry']
+```
+
+---
+
+## **Dictionaries**
+
+**Description:** Dictionaries store data as key–value pairs, allowing quick lookups.
+**Example:**
+
+```python
+pet_dict = {"dogs": ["Collie", "Bulldog"], "cats": ["Persian"]}
+print(pet_dict["dogs"])
+```
+
+**Output:**
+
+```
+['Collie', 'Bulldog']
+```
+
+---
+
+## **Tuples**
+
+**Description:** Tuples are ordered, immutable collections, often used for fixed data.
+**Example:**
 
 ```python
 coords = (10, 20)
@@ -34,43 +75,10 @@ print(coords[0])
 
 ---
 
-### 3. **String**
+## **Sets**
 
-Immutable sequence of characters.
-
-```python
-word = "Hello"
-print(word.upper())
-```
-
-**Output:**
-
-```
-HELLO
-```
-
----
-
-### 4. **Dictionary**
-
-Key–value pairs, unordered.
-
-```python
-ages = {"Alice": 25, "Bob": 30}
-print(ages["Bob"])
-```
-
-**Output:**
-
-```
-30
-```
-
----
-
-### 5. **Set**
-
-Unordered collection of unique elements.
+**Description:** Sets are unordered collections of unique elements.
+**Example:**
 
 ```python
 nums = {1, 2, 2, 3}
@@ -85,97 +93,128 @@ print(nums)
 
 ---
 
-### 6. **List Comprehension**
+## **List Comprehensions**
 
-Compact way to build lists.
+**Description:** Provide a shorthand way to create lists from iterables with optional conditions.
+**Example:**
 
 ```python
-squares = [x**2 for x in range(5)]
-print(squares)
+z = [x for x in range(0, 11) if x % 2 == 0]
+print(z)
 ```
 
 **Output:**
 
 ```
-[0, 1, 4, 9, 16]
+[0, 2, 4, 6, 8, 10]
 ```
 
 ---
 
-### 7. **For Loop**
+## **Zip Function**
 
-Iterates over elements.
+**Description:** Combines multiple iterables into tuples element-wise.
+**Example:**
 
 ```python
-for n in [1,2,3]:
-    print(n)
+names = ["Alice", "Bob"]
+ages = [25, 30]
+print(list(zip(names, ages)))
 ```
 
 **Output:**
 
 ```
-1
-2
-3
+[('Alice', 25), ('Bob', 30)]
 ```
 
 ---
 
-### 8. **While Loop**
+## **Methods**
 
-Repeats until condition is False.
+**Description:** Functions tied to objects. They define object behavior (e.g., `append`, `lower`).
+**Example:**
 
 ```python
-x = 3
-while x > 0:
-    print(x)
-    x -= 1
+nums = [1, 2]
+nums.append(3)
+print(nums)
 ```
 
 **Output:**
 
 ```
-3
-2
-1
+[1, 2, 3]
 ```
 
 ---
 
-### 9. **If–Else Statement**
+## **Constructors (`__init__`)**
 
-Decision making.
+**Description:** Special method to initialize object attributes when creating a class instance.
+**Example:**
 
 ```python
-age = 18
-if age >= 18:
-    print("Adult")
-else:
-    print("Minor")
+class Apple:
+    def __init__(self, color, flavor):
+        self.color = color
+        self.flavor = flavor
+
+fruit = Apple("red", "sweet")
+print(fruit.color)
 ```
 
 **Output:**
 
 ```
-Adult
+red
 ```
 
 ---
 
-### 10. **Zip**
+## **Special Methods (`__str__`, `__add__`, etc.)**
 
-Combine iterables into tuples.
+**Description:** Dunder methods that override operators or default behavior.
+**Example:**
 
 ```python
-names = ["A", "B"]
-scores = [90, 85]
-print(list(zip(names, scores)))
+class Apple:
+    def __init__(self, color, flavor):
+        self.color = color
+        self.flavor = flavor
+    def __str__(self):
+        return f"This apple is {self.color} and tastes {self.flavor}"
+
+fruit = Apple("green", "tart")
+print(fruit)
 ```
 
 **Output:**
 
 ```
-[('A', 90), ('B', 85)]
+This apple is green and tastes tart
+```
+
+---
+
+## **Classes & Methods**
+
+**Description:** Classes bundle attributes (data) and methods (behavior). Methods operate on `self` (the instance).
+**Example:**
+
+```python
+class Piglet:
+    def speak(self):
+        return "oink!"
+
+hamlet = Piglet()
+print(hamlet.speak())
+```
+
+**Output:**
+
+```
+oink!
 ```
 
 ---
