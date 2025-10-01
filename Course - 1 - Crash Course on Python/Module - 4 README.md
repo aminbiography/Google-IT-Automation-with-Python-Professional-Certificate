@@ -219,4 +219,63 @@ oink!
 
 ---
 
+## **Control Flow**
+
+**Description:** Control flow lets you direct how code executes using conditionals and loops.
+
+* **`if/elif/else`**: Run code based on conditions.
+* **`for` loop**: Iterate over sequences (lists, strings, dictionaries).
+* **`while` loop**: Repeat code while a condition is `True`.
+
+**Example (if/else):**
+
+```python
+x = 5
+if x > 0:
+    print("Positive")
+else:
+    print("Non-positive")
+```
+
+**Output:**
+
+```
+Positive
+```
+
+**Example (for loop):**
+
+```python
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+```
+
+**Output:**
+
+```
+apple
+banana
+cherry
+```
+
+**Example (while loop):**
+
+```python
+count = 3
+while count > 0:
+    print(count)
+    count -= 1
+```
+
+**Output:**
+
+```
+3
+2
+1
+```
+
+---
+
 
