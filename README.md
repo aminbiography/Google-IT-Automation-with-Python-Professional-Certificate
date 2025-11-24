@@ -1,12 +1,9 @@
                                              
-
-Live URL:    https://aminbiography.github.io/Google-IT-Automation-with-Python-Professional-Certificate/
+Live URL: https://aminbiography.github.io/Google-IT-Automation-with-Python-Professional-Certificate/
  
-
 ---      
 
 ![Google-IT-Automation-with-Python-Professional-Certificate - Crash Course on Python](https://coursera-certificate-images.s3.amazonaws.com/XK3O4KF9XVEM)
-
 
 ---
 MIT License
@@ -17,13 +14,11 @@ This file is part of the *Google IT Automation with Python Professional Certific
 (Personal Short Notes and Certifications Repository)
 Licensed under the MIT License. See the LICENSE file for details.
 
- 
 ---
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Materials"), to deal in the Materials without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Materials, and to permit persons to whom the Materials are furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Materials.
-
 
 ---
 
