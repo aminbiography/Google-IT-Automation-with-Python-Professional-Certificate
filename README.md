@@ -8,7 +8,7 @@ Live URL: https://aminbiography.github.io/Google-IT-Automation-with-Python-Profe
 ---
 MIT License
 
-Copyright (c) 2025 Mohammad Aminul Islam
+Copyright (c) 2025 Mohammad Aminul Islam 
 
 This “Crash Course on Python” certificate is part of the Google IT Automation with Python Professional Certificate program on Coursera.
 (Personal Short Notes and Certifications Repository)
