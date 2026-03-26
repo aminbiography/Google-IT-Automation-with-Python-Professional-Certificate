@@ -3,7 +3,7 @@ Live URL: https://aminbiography.github.io/Google-IT-Automation-with-Python-Profe
           
 ---                     
    
-![Google-IT-Automation-with-Python-Professional-Certificate - Crash Course on Python](https://coursera-certificate-images.s3.amazonaws.com/XK3O4KF9XVEM)
+![Crash Course on Python - From "Google-IT-Automation-with-Python-Professional-Certificate"](https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~XK3O4KF9XVEM/CERTIFICATE_LANDING_PAGE~XK3O4KF9XVEM.jpeg)
   
 --- 
 MIT License
