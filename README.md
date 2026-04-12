@@ -1,7 +1,7 @@
                                                 
 Live URL: https://aminbiography.github.io/Google-IT-Automation-with-Python-Professional-Certificate/ 
           
----                           
+---                            
    
 ![Google IT Automation with Python (Python Crash Course)](https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~XK3O4KF9XVEM/CERTIFICATE_LANDING_PAGE~XK3O4KF9XVEM.jpeg)
   
